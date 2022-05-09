@@ -1,0 +1,49 @@
+.aside {
+  width: 20rem;
+}
+.main {
+  width: 100%;
+}
+.list-group-item {
+  border-color: transparent !important;
+  border-left-width: 4px !important;
+  transition: 0.5s;
+}
+.list-group-item.active {
+  background-color: transparent;
+  color: #007bff;
+  border-style: solid !important;
+  border-left-color: #007bff !important;
+}
+.list-group-item-action:hover {
+  color: #007bff;
+  border-style: solid !important;
+  border-left-color: #007bff !important;
+}
+.card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.line-chart {
+  height: 15rem;
+}
+.visitor-chart {
+  height: 15.8rem;
+}
+@media screen and (max-width: 768px) {
+  .aside {
+    position: fixed;
+    z-index: 1041;
+    top: 0;
+    left: -100%;
+    transition: 0.5s;
+    height: 100vh;
+    background: #fff;
+  }
+  .aside.show {
+    left: 0;
+  }
+  .aside-body {
+    position: relative !important;
+  }
+}
